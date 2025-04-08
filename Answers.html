@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Page</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>🌐 Welcome to My Web Page</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#list">List</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#media">Media</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page contains my about information.</p>
+        </section>
+
+        <!-- Ordered List with Roman numerals -->
+        <section id="list">
+            <h2>🧾 Learning List</h2>
+            <ol type="I">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section id="contacts">
+            <h2>📇 Contact Table</h2>
+            <table border ="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>John Doe</td><td>Nairobi</td><td>0712345678</td><td>john@gmail.com</td></tr>
+                    <tr><td>Jane Smith</td><td>Mombasa</td><td>0722123456</td><td>jane@yahoo.com</td></tr>
+                    <tr><td>Mark Otieno</td><td>Kisumu</td><td>0700000000</td><td>mark@icloud.com</td></tr>
+                    <tr><td>Alice Wambui</td><td>Nakuru</td><td>0798765432</td><td>alice@gmail.com</td></tr>
+                    <tr><td>Peter Mwangi</td><td>Eldoret</td><td>0788888888</td><td>peter@icloud.com</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section -->
+        <section id="register">
+            <h2>📝 Registration Form</h2>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" placeholder="Create password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="role">Choose Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">--Select--</option>
+                    <option value="dev">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="tester">Tester</option>
+                </select>
+
+                <p>Gender:</p>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+
+                <p>Skills:</p>
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section id="media">
+            <h2>🎵 Multimedia</h2>
+
+            <h3>Image</h3>
+            <img src="https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg" alt="Team Working" width="400">
+
+            <h3>Audio Sample</h3>
+            <audio controls>
+                <source src="audio-sample.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <h3>Video Sample</h3>
+            <video width="320" height="240" controls>
+                <source src="video-sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>📧 Contact: moses@gmail.com</p>
+        <p>&copy; 2025 My HTML5 Page</p>
+    </footer>
+</body>
+</html>
+
